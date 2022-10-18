@@ -6,6 +6,12 @@ import './App.scss';
 import data from '../SliderData.json'
 
 function App() {
+
+
+
+  
+
+
   return (
     // console.log('start')
     <>

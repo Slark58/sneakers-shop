@@ -9,15 +9,16 @@ const Slider = ({data}) => {
     
     const [currentIndex, setCurrentIndex] = useState(0)
     const [length, setLength] = useState()   
-
-    // const [price, setPrice] = useState() 
-
     
-
+    const [price, setPrice] = useState([]) 
+    
 
     useEffect(() => {
         setLength(data.length)
     }, [data])
+
+
+
 
 
     const offsetRight = () => {
@@ -33,9 +34,16 @@ const Slider = ({data}) => {
     
     }
 
-    
-    
+    useEffect(() => {
+        data.map((item) => {
+            setPrice(price => price = item.price)
+        })
+    }, [])  
 
+    console.log(price)
+    
+    
+    
 
     // console.log(2 / 3)
 
@@ -55,8 +63,8 @@ const Slider = ({data}) => {
                                         <div className="wrapperImg" ><img  src={item.picture} alt="picture" className='images'/></div>
                                         <div className="slider__wrapper-title">{item.title}</div>
                                         <div className="slider__wrapper-description">{item.description}</div>
-                                        <div className="slider__wrapper-price">{item.price}</div>
-                                        <div className="slider__wrapper-fraction"></div>
+                                        <div className="slider__wrapper-price">{item.price} ₽</div>
+                                        <div className="slider__wrapper-fraction">{item.price / 2}</div>
                                     </div>
                                 )
                             })}
