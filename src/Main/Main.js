@@ -14,14 +14,14 @@ const Main = () => {
                     <div className="main__man">
                         <img src="https://img.brandshop.ru/cache/products/m/main_m-160922_1104x1200.jpg" alt="woman" className="main__img"/>
                         <div className='main__span'>Мужское</div>
-                        <a className="main__link">Смотреть</a>
+                        <div className="main__link">Смотреть</div>
                     </div>
                 </a>
                 <a href="#" className='main__wrapp'>
                     <div className="main__woman">
                         <img src="	https://img.brandshop.ru/cache/products/m/main_w_160922_1104x1200.jpg" alt="woman" className="main__img"/>
                         <div className='main__span'>Женское</div>
-                        <a className="main__link">Смотреть</a>
+                        <div className="main__link">Смотреть</div>
                     </div>
                 </a>
             </div>
