@@ -11,6 +11,7 @@
             gap: 25px;  
         }
         &-title {
+            color: black;
             margin: 10px 0 0 0;
             text-align: center;
         }
@@ -21,14 +22,36 @@
             color: rgba(0,0,0,0.4);
         }
         &-price {
+            color: black;
             text-align: center;
             margin-bottom: 20px;
         }
+        &-fraction {
+            text-align: center;
+            width: 200px;
+            background: white;
+            display: flex;
+            margin: 0 auto;
+            justify-content: space-around;
+            padding: 10px;
+            margin-bottom: 30px;
+            border-radius: 10px;
+            img {
+                height: 20px;
+                width: 20px;
+            }
+            &-part {
+                color: black
+            }
+        }
     }
     &__content {
+        border-radius: 10px;
+        padding-top: 20px;
         width: 300px;
         background-color: #F2F2F2;
         // height: 700px;
+        text-decoration: none;
     }
     
 }

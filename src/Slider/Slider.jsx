@@ -59,13 +59,16 @@ const Slider = ({data}) => {
                             {data.map((item, i) => {
                                 
                                 return(
-                                    <div className="slider__content" key={i}>
+                                    <a href='#' className="slider__content" key={i}>
                                         <div className="wrapperImg" ><img  src={item.picture} alt="picture" className='images'/></div>
                                         <div className="slider__wrapper-title">{item.title}</div>
                                         <div className="slider__wrapper-description">{item.description}</div>
                                         <div className="slider__wrapper-price">{item.price} ₽</div>
-                                        <div className="slider__wrapper-fraction">{item.price / 2}</div>
-                                    </div>
+                                        <div className="slider__wrapper-fraction">
+                                            <div className="slider__wrapper-fraction-picture"><img src="https://brandshop.ru/assets/images//dolyame/dolyame-logo-small.svg" alt="Рассрочка" /></div>
+                                            <div className="slider__wrapper-fraction-part">долями по {Math.floor(item.price / 4)} ₽</div>
+                                        </div>
+                                    </a>
                                 )
                             })}
                         </div>
