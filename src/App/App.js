@@ -2,8 +2,10 @@
 import Slider from '../Slider/Slider';
 import Header from '../Header/Header';
 import Main from '../Main/Main';
-import './App.scss';
 import data from '../SliderData.json'
+import Announcement from '../Announcement/Announcement';
+import News from '../News/News';
+import './App.scss';
 
 function App() {
 
@@ -18,6 +20,8 @@ function App() {
       <Header/>
       <Main/>
       <Slider data={data}/>
+      <Announcement/>
+      <News/>
     </>
   );
 }

@@ -8,7 +8,8 @@
     &__wrapper {
         &-move {
             display: flex;
-            gap: 25px;  
+            gap: 20px;  
+            transition: 0.5s;
         }
         &-title {
             color: black;
@@ -52,8 +53,17 @@
         background-color: #F2F2F2;
         // height: 700px;
         text-decoration: none;
+        transition: filter 0.3s;
+        &:hover {
+            filter: brightness(0.95);
+            
+        }
     }
     
+}
+
+.Nonebtn {
+    display: none;
 }
 
 .images {
@@ -63,6 +73,7 @@
 }
 
 .window {
+
     overflow: hidden;
     height: 600px;
     width: 100%;
@@ -71,4 +82,14 @@
 .wrapperImg {
     // object-fit: cover;  
    width: 269px;
+}
+
+.btn__prev2 {
+    width: 40px;
+    height: 40px;
+}
+
+.btn__next2 {
+    width: 40px;
+    height: 40px;
 }
