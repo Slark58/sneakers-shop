@@ -35,3 +35,11 @@
     width: 100%;
 }
 }
+
+.news__wrapper {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 2.4rem;
+  margin-bottom: 4.8rem;
+  column-gap: 1.2rem;
+}

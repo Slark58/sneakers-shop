@@ -7,8 +7,8 @@ import Announcement from '../Announcement/Announcement';
 import News from '../News/News';
 import './App.scss';
 
-function App() {
 
+function App() {
 
 
   
@@ -16,13 +16,13 @@ function App() {
 
   return (
     // console.log('start')
-    <>
+    <div className='container'>
       <Header/>
       <Main/>
       <Slider data={data}/>
       <Announcement/>
-      <News/>
-    </>
+      <News/> 
+    </div>
   );
 }
 
